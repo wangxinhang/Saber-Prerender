@@ -27,7 +27,8 @@ let Router = new VueRouter({
             }
         }
     },
-    routes: []
+    routes: [],
+    mode: "history"
 });
 AvueRouter.install(Vue, Router, Store, i18n);
 Router.$avueRouter.formatRoutes(Store.state.user.menu, true);
